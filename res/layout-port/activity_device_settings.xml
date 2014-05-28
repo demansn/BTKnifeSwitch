@@ -1,8 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DeviceSearch" >
 
-</ListView>
+    <EditText
+        android:id="@+id/editDeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCancelNewInfo"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="17dp"
+        android:ems="10"
+        android:inputType="text|textPassword"
+        android:maxEms="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editDeviceName"
+        android:layout_toLeftOf="@+id/editDeviceName"
+        android:text="@string/txt_newDeviceName" />
+
+    <TextView
+        android:id="@+id/textDeviceInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnCancelNewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editDeviceName"
+        android:text="@string/btn_cancel" />
+
+    <Button
+        android:id="@+id/btnSaveNewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_ok" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editDeviceName"
+        android:layout_alignRight="@+id/textView2"
+        android:text="@string/txt_newDevicePin" />
+
+    <EditText
+        android:id="@+id/editDevicePin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/editDeviceName"
+        android:ems="4"
+        android:inputType="numberPassword"
+        android:lines="1"
+        android:maxEms="4"
+        android:maxLines="1"
+        android:minEms="4"
+        android:minLines="1" />
+
+    <TextView
+        android:id="@+id/deviceInfoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editDeviceName"
+        android:layout_alignTop="@+id/textDeviceInfo"
+        android:layout_toRightOf="@+id/textDeviceInfo" />
+
+</RelativeLayout>

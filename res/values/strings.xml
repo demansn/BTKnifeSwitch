@@ -2,11 +2,22 @@
 <resources>
 
     <string name="app_name">BT knife switch</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Настойки</string>
     <string name="hello_world">Hello world!</string>
     <string name="button_search">Поиск</string>
     <string name="btn_text_on">Включено</string>
     <string name="btn_text_off">Выключено</string>
     <string name="button_toggle">Рубильник</string>
+    <string name="message_not_btAdapter">Нету Bluetooth адаптера</string>
+    <string name="DEBUG_TEG">demansn</string>
+    <string name="action_deviceSearch">Поиск устройств</string>
+    <string name="message_btDeviceNotPair">Нет подключение к рубильнику</string>
+    <string name="message_pairCanceled">Не удалось подключиться к устройству</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_ok">Сохранить</string>
+    <string name="txt_newDeviceName">Имя</string>
+    <string name="txt_newDevicePin">Пин код</string>
+    <string name="progress_title">Подключение к устройству...</string>
+    <string name="progress_message">Подождите.</string>
 
 </resources>

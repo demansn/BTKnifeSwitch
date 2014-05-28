@@ -1,20 +1,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:id="@+id/activitiDM"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".DeviceManagement" >
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
 
     <ToggleButton
         android:id="@+id/toggleButton1"
@@ -26,5 +20,27 @@
         android:text="@string/button_toggle"
         android:textOff="@string/btn_text_off"
         android:textOn="@string/btn_text_on" />
+
+    <ImageView
+        android:id="@+id/imageLampOff"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="74dp"
+        android:scaleType="fitCenter"
+        android:src="@raw/lamp_off" android:contentDescription="@null"/>
+
+    <ImageView
+        android:id="@+id/imageLampOn"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitCenter"
+        android:src="@raw/lamp_on" android:contentDescription="@null"/>
 
 </RelativeLayout>

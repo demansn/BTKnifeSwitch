@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="bluetoothActions" format="integer" name="SUCCESS_CONNECT">0</item>
+    <item type="bluetoothActions" format="integer" name="MESSAGE_READ">1</item>
+    <item type="bluetoothActions" format="string" name="CONNECTED">0</item>
+    <item type="bluetoothActions" format="string" name="TURN_SWITCH_ON">2</item>
+    <item type="bluetoothActions" format="string" name="TURN_SWITCH_OFF">3</item>
+    <item name="GET_STATE" format="string" type="bluetoothActions">4</item>
+   
+    
+</resources>
